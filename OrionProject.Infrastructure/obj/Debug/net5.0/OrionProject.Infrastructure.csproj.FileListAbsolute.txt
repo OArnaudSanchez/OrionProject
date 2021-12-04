@@ -1,0 +1,15 @@
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\OrionProject.Infrastructure.deps.json
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\OrionProject.Infrastructure.dll
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\ref\OrionProject.Infrastructure.dll
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\OrionProject.Infrastructure.pdb
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.AssemblyInfo.cs
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.dll
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\ref\OrionProject.Infrastructure.dll
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.pdb
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\OrionProject.Core.dll
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\bin\Debug\net5.0\OrionProject.Core.pdb
+C:\Users\Oasan\Desktop\OrionProject\OrionProject.Infrastructure\obj\Debug\net5.0\OrionProject.Infrastructure.csproj.CopyComplete

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "OrionProject.Infrastructure/1.0.0": {
+        "dependencies": {
+          "OrionProject.Core": "1.0.0"
+        },
+        "runtime": {
+          "OrionProject.Infrastructure.dll": {}
+        }
+      },
+      "OrionProject.Core/1.0.0": {
+        "runtime": {
+          "OrionProject.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OrionProject.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OrionProject.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

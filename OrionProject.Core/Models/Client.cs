@@ -9,6 +9,7 @@ namespace OrionProject.Core.Models
         public string Name { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
+        public string Email { get; set; }
         public List<Address> Addresses { get; set; }
     }
 }

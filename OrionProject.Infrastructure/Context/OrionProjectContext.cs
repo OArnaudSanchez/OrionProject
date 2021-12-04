@@ -22,6 +22,8 @@ namespace OrionProject.Infrastructure.Context
                 entity.Property(x => x.LastName);
                 
                 entity.Property(x => x.BirthDate);
+
+                entity.Property(x => x.Email);
             });
 
             modelBuilder.Entity<Address>(entity => {

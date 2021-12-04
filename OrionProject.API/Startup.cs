@@ -8,7 +8,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using OrionProject.Core.Interfaces;
+using OrionProject.Core.Services;
 using OrionProject.Infrastructure.Context;
+using OrionProject.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +39,12 @@ namespace OrionProject.API
             });
 
             services.AddDbContext<OrionProjectContext>(options => options.UseSqlServer(Configuration.GetConnectionString("OrionProject")));
+
+            services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IClientService, ClientService>();
+            services.AddTransient<IAddressRepository, AddressRepository>();
+            services.AddTransient<IAddressService, AddressService>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

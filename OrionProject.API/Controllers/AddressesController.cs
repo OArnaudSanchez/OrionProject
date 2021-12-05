@@ -40,7 +40,7 @@ namespace OrionProject.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] AddressDTO addressDTO)
         {
-            if (addressDTO == null) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
             var address = _mapper.Map<Address>(addressDTO);
             await _addressService.AddAddress(address);
             return Created(nameof(Get), new { id = address.Id, addressDTO });
@@ -49,7 +49,7 @@ namespace OrionProject.API.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] AddressDTO addressDTO)
         {
-            if (id != addressDTO.Id || addressDTO == null) return BadRequest();
+            if (id != addressDTO.Id || !ModelState.IsValid) return BadRequest();
             addressDTO.Id = id;
             var address = _mapper.Map<Address>(addressDTO);
             await _addressService.UpdateAddress(address);

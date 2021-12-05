@@ -42,7 +42,7 @@ namespace OrionProject.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] ClientDTO clientDTO)
         {
-            if (clientDTO == null) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
             var client = _mapper.Map<Client>(clientDTO);
             await _clientService.AddClient(client);
             return Created(nameof(Get), new { id = client.Id, clientDTO });
@@ -51,7 +51,7 @@ namespace OrionProject.API.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] ClientDTO clientDTO)
         {
-            if (id != clientDTO.Id || clientDTO == null) return BadRequest();
+            if (id != clientDTO.Id || !ModelState.IsValid) return BadRequest();
             clientDTO.Id = id;
             var client = _mapper.Map<Client>(clientDTO);
             await _clientService.UpdateClient(client);

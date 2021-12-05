@@ -45,6 +45,8 @@ namespace OrionProject.API
             services.AddTransient<IAddressRepository, AddressRepository>();
             services.AddTransient<IAddressService, AddressService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +60,8 @@ namespace OrionProject.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors(options => options.WithOrigins("*").WithMethods("*"));
 
             app.UseRouting();
 

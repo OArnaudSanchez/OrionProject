@@ -16,11 +16,11 @@ namespace OrionProject.Infrastructure.Repositories
         }
         public async Task<List<Client>> GetClients()
         {
-            return await _context.Clients.ToListAsync();
+            return await _context.Clients.Include(x => x.Addresses).ToListAsync();
         }
         public async Task<Client> GetClient(int id)
         {
-            return await _context.Clients.FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.Clients.Include(x => x.Addresses).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Client> AddClient(Client client)

@@ -9,5 +9,7 @@ namespace OrionProject.Core.DTOs
         public string StreetNumber { get; set; }
         public string PostalCode { get; set; }
         public int IdClient { get; set; }
+        public virtual ClientDTO Client { get; set; }
+
     }
 }

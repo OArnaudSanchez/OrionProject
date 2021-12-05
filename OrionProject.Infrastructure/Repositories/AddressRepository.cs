@@ -17,11 +17,11 @@ namespace OrionProject.Infrastructure.Repositories
         }
         public async Task<List<Address>> GetAddresses()
         {
-            return await _context.Addresses.ToListAsync();
+            return await _context.Addresses.Include(x => x.Client).ToListAsync();
         }
         public async Task<Address> GetAddress(int id)
         {
-            return await _context.Addresses.FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.Addresses.Include(x => x.Client).FirstOrDefaultAsync(x => x.Id == id);
         }
 
 

@@ -64,7 +64,7 @@ namespace OrionProject.API
 
             app.UseHttpsRedirection();
 
-            app.UseCors(options => options.WithOrigins("*").WithMethods("*"));
+            app.UseCors(options => options.WithOrigins("*").WithMethods("*").WithHeaders("*"));
 
             app.UseRouting();
 
